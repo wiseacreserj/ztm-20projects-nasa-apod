@@ -108,7 +108,7 @@ const getNasaPictures = async () => {
 };
 
 //Add result to Favorites
-const saveFavotite = (itemUrl) => {
+const saveFavorite = (itemUrl) => {
     resultsArray.forEach((item) => {
         if (item.url.includes(itemUrl) && !favorites[itemUrl]) {
             favorites[itemUrl] = item;
@@ -125,7 +125,7 @@ const saveFavotite = (itemUrl) => {
 };
 
 //Remove item from Favorites
-const removeFavotite = (itemUrl) => {
+const removeFavorite = (itemUrl) => {
     if (favorites[itemUrl]) {
         delete favorites[itemUrl];
         //Save to LocalStorate
